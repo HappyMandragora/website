@@ -122,9 +122,18 @@ section{
     color: transparent;
     font-size: 2rem;
 }
+iframe{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .btn-group{
     display: flex;
     gap: 1rem;
+}
+.btn-group a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
 }
 a.btn {
     text-decoration: none;
@@ -172,6 +181,50 @@ a.btn {
     font-weight: 600;
     margin-bottom: 3rem;
 }
+.education-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: unset;
+    gap: 2rem;
+}
+
+.grid-card{
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.grid-card:hover {
+    transform: scale(1.02);
+    background-color: black;
+    color: white;
+}
+
+.grid-card i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.grid-card span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to right, #009dff, #ff00ff);
+    background-clip: text;
+    color: transparent;
+}
+
 .experience-info{
     display: flex;
     align-items: center;
@@ -214,6 +267,64 @@ a.btn {
     background-clip: text;
     color: transparent;
 }
+
+.certifications {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 80%;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 7);
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+button.prev-btn, button.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+button.prev-btn:hover, button.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.prev-btn {
+    left: 10px;
+}
+
+button.next-btn {
+    right: 10px;
+}
+
+.carousel-container:hover .prev-btn,
+.carousel-container:hover .next-btn {
+    display: block;
+}
+
 ::-webkit-scrollbar{
     width: 20px;
 }

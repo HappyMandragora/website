@@ -292,6 +292,7 @@ a.btn {
 .carousel-slide img {
     width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 button.prev-btn, button.next-btn {
@@ -482,6 +483,13 @@ footer ul li a{
     }
     .experience-info img{
         width: 70vw;
+    }
+    .carousel-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .carousel-slide img {
+        max-height: 300px;
     }
 }
 

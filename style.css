@@ -517,9 +517,10 @@ footer ul li a{
     .logo {
         font-size: 1.2rem;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 40%;
+        overflow: visible;
+        text-overflow: unset;
+        max-width: fit-content;
+        flex-shrink: 0;
     }
 
     .hire-btn {

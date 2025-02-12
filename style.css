@@ -559,6 +559,11 @@ footer ul li a{
 
 /* Perbaikan Carousel Sertifikat */
 @media (max-width: 768px) {
+    .about .carousel-container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
     .carousel-slide {
         display: flex;
         text-align: center;

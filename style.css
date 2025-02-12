@@ -503,7 +503,7 @@ footer ul li a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: 1rem;
         width: 100%;
         position: fixed;
         top: 0;
@@ -519,7 +519,7 @@ footer ul li a{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 50%;
+        max-width: 40%;
         flex-shrink: 0;
     }
 
@@ -534,8 +534,9 @@ footer ul li a{
         display: none;
         position: absolute;
         top: 60px;
-        left: 0;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
         background: rgba(0, 0, 0, 0.9);
         flex-direction: column;
         text-align: center;
@@ -550,6 +551,7 @@ footer ul li a{
     #menu-icon {
         display: block;
         cursor: pointer;
+        z-index: 1001;
     }
 }
 

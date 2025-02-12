@@ -513,6 +513,12 @@ footer ul li a{
     .experience-info img{
         width: 70vw;
     }
+    .certification {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .carousel-container {
         max-width: 100%;
         padding: 0 1rem;

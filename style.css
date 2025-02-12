@@ -461,6 +461,16 @@ footer ul li a{
 }
 
 @media(max-width:768px){
+    header{
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    header .visit-btn{
+        display: none;
+    }
     .about-container{
         flex-direction: column;
     }
@@ -511,6 +521,7 @@ footer ul li a{
         text-overflow: ellipsis;
         max-width: 40%;
         flex-shrink: 0;
+        color: white;
     }
 
     .hire-btn {
@@ -523,15 +534,18 @@ footer ul li a{
         top: 50%;
         transform: translateY(-50%);
         z-index: 1002;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        border: none;
     }
 
     .nav-links {
         display: none;
         position: absolute;
-        top: 60px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
+        top: 100%;
+        left: 0;
+        width: 100%;
         background: rgba(0, 0, 0, 0.9);
         flex-direction: column;
         text-align: center;
@@ -549,6 +563,8 @@ footer ul li a{
         cursor: pointer;
         z-index: 1001;
         position: relative;
+        font-size: 1.5rem;
+        color: white;
     }
 }
 

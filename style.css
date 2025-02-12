@@ -519,6 +519,9 @@ footer ul li a{
         padding: 0 1rem;
         text-align: center;
     }
+    .section-title {
+        text-align: center;
+    }
     .carousel-slide img {
         max-height: 300px;
     }
@@ -540,6 +543,7 @@ footer ul li a{
 
     .info-box h1 {
         font-size: 2.5rem;
+        text-align: center;
     }
 }
 

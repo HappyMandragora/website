@@ -503,7 +503,7 @@ footer ul li a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding: 10px;
         width: 100%;
         position: fixed;
         top: 0;

@@ -514,6 +514,14 @@ footer ul li a{
     .experience-info img{
         width: 70vw;
     }
+    .carousel-container {
+        max-width: 100%;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .carousel-slide img {
+        max-height: 300px;
+    }
 }
 
 

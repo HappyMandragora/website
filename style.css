@@ -502,21 +502,28 @@ footer ul li a{
 @media (max-width: 768px) {
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 1rem 2rem;
         width: 100%;
+        position: relative;
     }
 
     .logo {
         font-size: 1.2rem;
         white-space: nowrap;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .hire-btn {
+        display: block;
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
         white-space: nowrap;
+        position: absolute;
+        right: 1rem;
     }
 
     .nav-links {
@@ -539,6 +546,8 @@ footer ul li a{
     #menu-icon {
         display: block;
         cursor: pointer;
+        position: absolute;
+        left: 1rem;
     }
 }
 
@@ -564,7 +573,8 @@ footer ul li a{
 @media (max-width: 768px) {
     .project-card iframe {
         width: 100%;
-        height: auto;
+        height: 400px;
+        display: block;
     }
     .btn-group {
         flex-direction: column;
@@ -573,35 +583,14 @@ footer ul li a{
     }
 }
 
-/* Perbaikan Carousel Sertifikat */
-@media (max-width: 768px) {
-    .carousel-slide {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .carousel-slide img {
-        width: 80%;
-        max-width: 300px;
-        scroll-snap-align: center;
-    }
-
-    .prev-btn, .next-btn {
-        display: block;
-    }
-}
-
-/* Keselarasan Website di Mobile */
+/* Perbaikan Keselarasan Website di Mobile */
 @media (max-width: 768px) {
     body {
         text-align: center;
     }
     section, footer {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 

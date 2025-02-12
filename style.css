@@ -499,6 +499,75 @@ footer ul li a{
     }
 }
 
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Perbaikan Ukuran Gambar dan Teks di Mobile */
+@media (max-width: 768px) {
+    .about .about-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about img {
+        width: 60%;
+        max-width: 250px;
+    }
+
+    .info-box h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Perbaikan Carousel Sertifikat */
+@media (max-width: 768px) {
+    .carousel-slide {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .carousel-slide img {
+        width: 80%;
+        max-width: 300px;
+        scroll-snap-align: center;
+    }
+
+    .prev-btn, .next-btn {
+        display: block;
+    }
+}
+
 @media(max-width:600px){
     header #menu-icon{
         display: block;

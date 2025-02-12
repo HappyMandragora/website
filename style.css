@@ -517,8 +517,6 @@ footer ul li a{
     .carousel-container {
         max-width: 100%;
         padding: 0 1rem;
-        text-align: center;
-        justify-content: center;
     }
     .carousel-slide img {
         max-height: 300px;
@@ -562,8 +560,6 @@ footer ul li a{
 @media (max-width: 768px) {
     .carousel-slide {
         display: flex;
-        text-align: center;
-        justify-content: center;
         flex-wrap: nowrap;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -571,7 +567,7 @@ footer ul li a{
     }
 
     .carousel-slide img {
-        width: 100%;
+        width: 80%;
         max-width: 300px;
         scroll-snap-align: center;
     }

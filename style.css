@@ -464,8 +464,6 @@ footer ul li a{
     header{
         padding: 10px 20px;
         gap: 1rem;
-        width: 100%;
-        flex-wrap: wrap;
     }
     header .logo{
         font-size: 1rem;

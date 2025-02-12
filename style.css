@@ -549,28 +549,6 @@ footer ul li a{
     }
 }
 
-/* Perbaikan Carousel Sertifikat */
-@media (max-width: 768px) {
-    .carousel-slide {
-        display: flex;
-        text-align: center;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .carousel-slide img {
-        width: 80%;
-        max-width: 300px;
-        scroll-snap-align: center;
-    }
-
-    .prev-btn, .next-btn {
-        display: block;
-    }
-}
-
 /* Keselarasan Website di Mobile */
 @media (max-width: 768px) {
     body {

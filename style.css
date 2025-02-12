@@ -517,9 +517,9 @@ footer ul li a{
     .logo {
         font-size: 1.2rem;
         white-space: nowrap;
-        overflow: visible;
-        text-overflow: unset;
-        max-width: fit-content;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 50%;
         flex-shrink: 0;
     }
 

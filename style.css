@@ -539,6 +539,19 @@ footer ul li a{
     .info-box h1 {
         font-size: 2.5rem;
     }
+    h1 {
+    text-align: center;
+    width: 100%;
+    display: block; /* Ubah dari flex ke block */
+    margin: 0 auto; /* Pastikan margin otomatis */
+}
+
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
 }
 
 /* Perbaikan My Projects PDF */

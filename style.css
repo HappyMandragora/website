@@ -470,10 +470,19 @@ footer ul li a{
         position: relative;
     }
     header .logo{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    header .visit-btn{
-        display: none;
+    header .hire-btn{
+        display: block;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        position: absolute;
+        right: 1rem;
     }
     .about-container{
         flex-direction: column;

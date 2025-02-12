@@ -505,6 +505,13 @@ footer ul li a{
         align-items: center;
         padding: 1rem 2rem;
         width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(8px);
+        z-index: 1000;
     }
 
     .logo {
@@ -516,6 +523,7 @@ footer ul li a{
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
         white-space: nowrap;
+        display: block;
     }
 
     .nav-links {

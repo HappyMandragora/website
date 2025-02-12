@@ -528,15 +528,17 @@ footer ul li a{
         font-size: 0.9rem;
         white-space: nowrap;
         display: block;
+        position: absolute;
+        right: 1rem;
     }
 
     .nav-links {
         display: none;
         position: absolute;
         top: 60px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
+        left: 0;
+        right: 0;
+        width: 100%;
         background: rgba(0, 0, 0, 0.9);
         flex-direction: column;
         text-align: center;

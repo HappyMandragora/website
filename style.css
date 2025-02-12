@@ -505,6 +505,18 @@ footer ul li a{
         justify-content: space-between;
         align-items: center;
         padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+
+    .hire-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
     }
 
     .nav-links {
@@ -535,6 +547,7 @@ footer ul li a{
     .about .about-container {
         flex-direction: column;
         gap: 2rem;
+        text-align: center;
     }
 
     .about img {
@@ -544,6 +557,19 @@ footer ul li a{
 
     .info-box h1 {
         font-size: 2.5rem;
+    }
+}
+
+/* Perbaikan My Projects PDF */
+@media (max-width: 768px) {
+    .project-card iframe {
+        width: 100%;
+        height: auto;
+    }
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
     }
 }
 
@@ -565,6 +591,17 @@ footer ul li a{
 
     .prev-btn, .next-btn {
         display: block;
+    }
+}
+
+/* Keselarasan Website di Mobile */
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+    section, footer {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 

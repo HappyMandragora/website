@@ -520,13 +520,16 @@ footer ul li a{
     
       .carousel-container {
         max-width: 100%;
-        border-radius: 0.5rem;
+        border-radius: 0.1rem;
       }
     
       .carousel-slide img {
-        width: 100%;
+        width: 80%;
         height: auto;
+        max-height: 300px;
+        max-width: 300px;
         object-fit: contain;
+        scroll-snap-align: center;
       }
     
       .carousel-container:hover .prev-btn,
@@ -545,6 +548,11 @@ footer ul li a{
     
       .carousel-slide {
         gap: 0.5rem;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
       }
 }
 
